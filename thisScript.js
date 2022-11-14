@@ -80,9 +80,7 @@ class Solgier {
   }
 }
 
-//Object 4
-
-class PolishGrot extends Solgier {
+class dataEquipment extends Solgier {
   constructor(weapon, name, surname, country) {
     super();
     this.weapon = weapon;
@@ -91,16 +89,23 @@ class PolishGrot extends Solgier {
     this.country = country;
   }
 
-  shoot() {
+  shootPL() {
     return "Boom Boom";
+  }
+  shootTer() {
+    return "Ra-ta-ta-ta-ta";
   }
 }
 
-const solgierJan = new PolishGrot("Grot", "Jan", "Paweł", "Polska");
+//Object 4
+
+const solgierJan = new dataEquipment("Grot", "Jan", "Paweł", "Polska");
 
 let object4Place = document.getElementById("forObject4");
 
 object4Place.innerHTML +=
+  solgierJan.job +
+  "<br>" +
   solgierJan.name +
   " " +
   solgierJan.surname +
@@ -109,21 +114,65 @@ object4Place.innerHTML +=
   "<br>" +
   solgierJan.weapon +
   "<br>" +
-  solgierJan.shoot();
+  solgierJan.shootPL();
 
 //Object 5
 
-class IranAK47 extends Solgier {
-  constructor(weapon, name) {
-    super();
-    this.weapon = weapon;
-    this.name = name;
-  }
-}
-
-let solgierAhmed = new Solgier("żołnierz") && new IranAK47("AK47", "Ahmed");
+let solgierAhmed =
+  new Solgier("żołnierz") && new dataEquipment("AK47", "Ahmed", "Ali", "Iraq");
 
 let object5Place = document.getElementById("forObject5");
 
 object5Place.innerHTML +=
-  solgierAhmed.name + "<br>" + solgierAhmed.weapon + "<br>" + solgierAhmed.job;
+  solgierAhmed.job +
+  "<br>" +
+  solgierAhmed.name +
+  " " +
+  solgierAhmed.surname +
+  "<br>" +
+  solgierAhmed.country +
+  "<br>" +
+  solgierAhmed.weapon +
+  "<br>" +
+  solgierAhmed.shootTer();
+
+//Object 6
+
+let solgierBob =
+  new Solgier("żołnierz") && new dataEquipment("M4", "Bob", "Smith", "USA");
+
+let object6Place = document.getElementById("forObject6");
+
+solgierBob.shootTRRR = "TRRR";
+
+object6Place.innerHTML +=
+  solgierBob.job +
+  "<br>" +
+  solgierBob.name +
+  " " +
+  solgierBob.surname +
+  "<br>" +
+  solgierBob.country +
+  "<br>" +
+  solgierBob.weapon;
+
+let bobShootsPlace = document.getElementById("TRR");
+
+bobShootsPlace.innerHTML += solgierBob.shootTRRR;
+
+let bobWindowClose = document.getElementById("BobShootWindow");
+
+bobWindowClose.addEventListener("click", function () {
+  bobWindowClose.classList.toggle("show");
+});
+
+let bobShoots = document.getElementById("BobShoot");
+let bobWindow = document.getElementById("BobShootWindow");
+//let soundTRR = document.getElementById("TRR");
+//let messageHit = document.getElementById("HIT");
+
+bobShoots.addEventListener("click", function () {
+  bobWindow.classList.toggle("show");
+  //soundTRR.classList.toggle("active");
+  //messageHit.classList.toggle("active");
+});

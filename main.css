@@ -1,0 +1,33 @@
+.hide {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 200;
+    min-width: 100vh;
+    min-height: 100vmax;
+    width: 100%;
+    height: 100%;
+    font-size: 10rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+
+}
+
+@media screen and (max-width: 426px) {
+    .hide {
+        font-size: 2rem;
+        min-width: 100vh;
+        min-height: 300vmax;
+        justify-content: start;
+        padding-top: 30rem;
+    }
+}
+
+
+
+.show {
+    display: flex;
+}

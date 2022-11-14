@@ -9,7 +9,7 @@
 
     <!-- Tailwind and Styles-->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="main.css" />
 
 
 
@@ -20,6 +20,12 @@
 <!-- ---------------------------------------------------     BODY -->
 
 <body class="flex bg-slate-900 justify-center w-full ">
+
+    <!-- BobShoots div-->
+    <div id="BobShootWindow" class="hide">
+        <div id="TRR"></div>
+        <div id="HIT" class="mt-16 text-center"> BOOOM, YOU'RE HIT </div>
+    </div>
 
 
     <!-- ---------------------------------------------------     HEADER -->
@@ -183,12 +189,37 @@
 
 
                         </div>
-                        <!-- END: COL4-->
+                        <!-- END: COL5-->
                     </div>
                     <!--END: COL6 -->
                 </div>
                 <!-- COL7-->
-                <div class="p-2 flex justify-start items-center text-white text-bold border-2 flex-col ">6
+                <div class="p-2 flex justify-start items-center text-white text-bold border-2 flex-col ">
+
+                    <!-- COL6 SECTION CONTAINER     ----------------------------------------------------   OBJECT#6-->
+                    <div class="flex flex-col ">
+
+                        <!-- OBJECT PICTURE-->
+                        <img class="max-h-72"
+                            src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/314348455_634692961636608_1714637339064900824_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=3puDbv31N-QAX_TjRU7&tn=DdqEiGkvDo-WROD9&_nc_ht=scontent-waw1-1.xx&oh=00_AfAHRKN4yMi6tm_rUdq8-cHD6LuGzpCDcdp8gU3ecrYmYg&oe=6369E4FB"
+                            alt="menu_picture">
+                        <div
+                            class="flex p-2 content-center -mt-10 bg-gradient-to-r from-black to-transparent text-white">
+                            OBJECT #6</div>
+                        <!-- END: OBJECT PICTURE-->
+
+                        <div class="bg-red-500" id="forObject6">
+
+
+                        </div>
+
+
+                        <button id="BobShoot" class="m-4 rounded bg-black text-white font-bold">Strzał</button>
+
+                        <!-- END: COL6-->
+                    </div>
+
+
                     <!-- END: COL7-->
                 </div>
                 <!-- END: ROW5-->
