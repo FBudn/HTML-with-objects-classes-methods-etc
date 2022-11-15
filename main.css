@@ -31,3 +31,86 @@
 .show {
     display: flex;
 }
+
+.burger {
+    display: none;
+}
+
+.burger-lines {
+    width: 40px;
+    height: 3px;
+    background-color: #010001;
+    margin-top: 10px;
+
+}
+
+.burger-icon {
+    display: none;
+}
+
+
+/*  ----------------- RESPONSIVE MENU -------------- */
+.active {
+    transform: translate(0%);
+}
+
+.dropdown-menu-logo {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    margin-top: -10px;
+}
+
+
+.burger.active .burger-lines:first-child {
+    position: absolute;
+    transform: translateX(-555px);
+    top: -25px;
+    height: 110vh;
+    width: 70vw;
+    background-color: rgba(0, 0, 0, 0.827);
+}
+
+
+.burger.active .burger-lines:nth-child(2) {
+    display: none;
+    /*transform: rotate(45deg);
+    margin-bottom: -5px;
+    width: 20px;
+    margin-left: 0px;
+    transition: 0.3s ease-in;
+    margin-right: 13rem;
+    background-color: red;
+    */
+}
+
+.burger.active .burger-lines:nth-child(3) {
+    display: none;
+    /*
+    transform: rotate(135deg);
+    bottom: 5px;
+    transition: 0.3s ease-in;
+    margin-right: 13rem;
+    background-color: red;
+    */
+}
+
+.burger-icon {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    margin-left: 2rem;
+    font-size: 20px;
+    color: red;
+}
