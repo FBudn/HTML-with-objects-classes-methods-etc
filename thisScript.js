@@ -160,12 +160,14 @@ let bobShootsPlace = document.getElementById("TRR");
 
 bobShootsPlace.innerHTML += solgierBob.shootTRRR;
 
+//CLOSING
 let bobWindowClose = document.getElementById("BobShootWindow");
 
 bobWindowClose.addEventListener("click", function () {
   bobWindowClose.classList.toggle("show");
 });
 
+//OPENING
 let bobShoots = document.getElementById("BobShoot");
 let bobWindow = document.getElementById("BobShootWindow");
 //let soundTRR = document.getElementById("TRR");
@@ -175,4 +177,29 @@ bobShoots.addEventListener("click", function () {
   bobWindow.classList.toggle("show");
   //soundTRR.classList.toggle("active");
   //messageHit.classList.toggle("active");
+});
+
+//OPENING MENU
+
+const burgerIcon = document.getElementById("burger-div");
+const mobileNav = document.getElementById("header-ul");
+
+burgerIcon.addEventListener("click", function () {
+  mobileNav.classList.toggle("show");
+});
+
+//CLOSING MENU
+let mobileNavClose = document.getElementById("header-ul");
+
+bobWindowClose.addEventListener("click", function () {
+  mobileNavClose.classList.toggle("show");
+});
+
+/* BURGER X ICON */
+
+const dropBurger = document.querySelector(".burger-icon");
+const droP = document.getElementById("header-ul");
+
+dropBurger.addEventListener("click", function () {
+  droP.classList.toggle("show");
 });

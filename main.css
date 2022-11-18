@@ -49,68 +49,94 @@
 }
 
 
-/*  ----------------- RESPONSIVE MENU -------------- */
-.active {
-    transform: translate(0%);
-}
 
-.dropdown-menu-logo {
-    display: flex;
-    margin-bottom: 1rem;
-}
-
-.burger {
-    display: flex;
+.hideNav {
+    display: none;
+    position: absolute;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    height: 40px;
-    cursor: pointer;
-    border: none;
-    margin-top: -10px;
+    justify-content: start;
+    align-content: center;
+    background-color: white;
+    min-width: 50vh;
+    height: 100%;
+    z-index: 500;
+    margin-top: 36.5rem;
+    min-height: 100vh;
+    left: 0;
 }
 
 
-.burger.active .burger-lines:first-child {
-    position: absolute;
-    transform: translateX(-555px);
-    top: -25px;
-    height: 110vh;
-    width: 70vw;
-    background-color: rgba(0, 0, 0, 0.827);
-}
 
 
-.burger.active .burger-lines:nth-child(2) {
-    display: none;
-    /*transform: rotate(45deg);
-    margin-bottom: -5px;
-    width: 20px;
-    margin-left: 0px;
-    transition: 0.3s ease-in;
-    margin-right: 13rem;
-    background-color: red;
-    */
-}
 
-.burger.active .burger-lines:nth-child(3) {
-    display: none;
-    /*
-    transform: rotate(135deg);
-    bottom: 5px;
-    transition: 0.3s ease-in;
-    margin-right: 13rem;
-    background-color: red;
-    */
-}
+/* *******************************************************************    SMALLER SCREENS  */
 
-.burger-icon {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    top: 1rem;
-    margin-left: 2rem;
-    font-size: 20px;
-    color: red;
+@media screen and (max-width: 768px) {
+
+    /*  ----------------- RESPONSIVE MENU -------------- */
+    .active {
+        transform: translate(0%);
+
+    }
+
+
+
+
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        height: 40px;
+        cursor: pointer;
+        border: none;
+        margin-top: -10px;
+    }
+
+
+    .burger.active .burger-lines:first-child {
+        position: absolute;
+        transform: translateX(-555px);
+        top: -25px;
+        height: 110vh;
+        width: 70vw;
+        background-color: rgba(0, 0, 0, 0.827);
+    }
+
+
+    .burger.active .burger-lines:nth-child(2) {
+        display: none;
+
+    }
+
+    .burger.active .burger-lines:nth-child(3) {
+        display: none;
+
+    }
+
+    .burger-icon {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 0.2rem;
+        left: 18.7rem;
+        font-size: 20px;
+        color: red;
+    }
+
+
+
+
+
+    /*  ----------------- DROP-DOWN MENU -------------- */
+    .show {
+        display: flex;
+
+    }
+
+
+
+
 }

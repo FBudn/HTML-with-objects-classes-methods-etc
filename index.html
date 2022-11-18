@@ -11,7 +11,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="main.css" />
 
+    <!-- FONTS -->
 
+    <link rel="stylesheet" id="appilo-fontawesome-5-2-css"
+        href="https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/css/plugins/fontawesome-5/css/fontawesome-pro-v5.css?ver=6.1.7"
+        type="text/css" media="all">
 
 
 </head>
@@ -32,23 +36,68 @@
 
     <header class="flex justify-center items-center bg-white fixed w-full h-16 p-4 border-b-2 z-20">
 
-        <!-- Burger icon-->
 
-        <div class="burger ">
-            <div class="burger-lines"></div>
-            <div class="burger-lines"></div>
-            <div class="burger-lines"></div>
+        <!-- for burger div -->
+        <div class="flex w-3/5 justify-between items-center h-full  ">
+            <!-- Burger icon-->
+
+            <div id="burger-div" class="burger">
+                <div class="burger-lines"></div>
+                <div class="burger-lines"></div>
+                <div class="burger-lines"></div>
+            </div>
+
+            <!-- end for burger div -->
         </div>
 
-        <!-- LOGO TOP BAR CENTER-->
+        <!-- --------------------------------------------- DROP-DOWN MENU-->
 
-        <div>
-            <img class="flex mt-12 w-24 h-24 mr-8" src="https://accredito.com/uploads/partner_avatars/small/anwil2.png"
-                alt="logo_top_bar">
+        <ul id="header-ul" class="hideNav">
+            <i class="far fa-times-circle burger-icon"></i>
+
+            <li id="pages" class="flex flex-col bg-red-100">
+                <a class=" flex-col bg-red-100" href="#">Pages </a>
+                <div class="flex flex-col bg-red-100">
+                    <div class="flex flex-col bg-red-100">
+
+                        <div class="flex flex-col bg-red-100">
+                            <h6>Service</h5>
+                                <a href="#">Service 01 </a>
+                                <a href="#">Service 02 </a>
+                                <a href="#">Service 03 </a>
+                                <a href="#">Service 04 </a>
+                        </div>
+
+                        <div class="flex flex-col bg-red-100">
+                            <h6>Team</h5>
+                                <a href="#">Team 01 </a>
+                                <a href="#">Team 02 </a>
+
+                                <div class="flex flex-col bg-red-100">
+                                    <h6>Others</h5>
+                                        <a href="#">FAQ</a>
+                                        <a href="#">404 </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
+
+        <!-- for-logo div -->
+        <div class="flex w-full justify-between items-center h-full  ">
+
+            <!-- LOGO TOP BAR CENTER-->
+
+            <div>
+                <img class="flex mt-12 w-24 h-24 " src="https://accredito.com/uploads/partner_avatars/small/anwil2.png"
+                    alt="logo_top_bar">
+            </div>
+
+            <!-- end for-logo div  -->
         </div>
-
-        <!-- INWALIDA LOGO TOP-BAR -->
-
 
 
     </header>
