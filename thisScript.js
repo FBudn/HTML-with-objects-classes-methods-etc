@@ -160,24 +160,22 @@ let bobShootsPlace = document.getElementById("TRR");
 
 bobShootsPlace.innerHTML += solgierBob.shootTRRR;
 
-//CLOSING
+//CLOSING screen BobShoot
 let bobWindowClose = document.getElementById("BobShootWindow");
 
 bobWindowClose.addEventListener("click", function () {
   bobWindowClose.classList.toggle("show");
 });
 
-//OPENING
+//OPENING screen Bobshoot
 let bobShoots = document.getElementById("BobShoot");
 let bobWindow = document.getElementById("BobShootWindow");
-//let soundTRR = document.getElementById("TRR");
-//let messageHit = document.getElementById("HIT");
 
 bobShoots.addEventListener("click", function () {
   bobWindow.classList.toggle("show");
-  //soundTRR.classList.toggle("active");
-  //messageHit.classList.toggle("active");
 });
+
+// --------------------                         RESPONSIVE MENU ACTIONS
 
 //OPENING MENU
 
@@ -202,4 +200,26 @@ const droP = document.getElementById("header-ul");
 
 dropBurger.addEventListener("click", function () {
   droP.classList.toggle("show");
+});
+
+/* OPENING BACKGROUND WHEN MENU OPEN */
+
+const responsiveMenuBackgroundBurger = document.getElementById("burger-div");
+const responsiveBackground = document.getElementById(
+  "responsive-menu-background"
+);
+
+responsiveMenuBackgroundBurger.addEventListener("click", function () {
+  responsiveBackground.classList.toggle("show");
+});
+
+//CLOSING BACKGROUND WHEN MENU OPEN
+const responsiveBackgroundClose = document.getElementById(
+  "responsive-menu-background"
+);
+
+const responsiveBackgroundBurgerIconClosing =
+  document.querySelector(".burger-icon");
+responsiveBackgroundBurgerIconClosing.addEventListener("click", function () {
+  responsiveBackgroundClose.classList.toggle("show");
 });

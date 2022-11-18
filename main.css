@@ -1,3 +1,10 @@
+/* ------------------------------------------------------------   CLASSES FOR SCREENS  >768px */
+
+
+
+
+
+/* ----------------------------------- BOB-SHOOTING SCREEN */
 .hide {
     display: none;
     justify-content: center;
@@ -16,22 +23,15 @@
 
 }
 
-@media screen and (max-width: 426px) {
-    .hide {
-        font-size: 2rem;
-        min-width: 100vh;
-        min-height: 300vmax;
-        justify-content: start;
-        padding-top: 30rem;
-    }
-}
-
-
-
 .show {
     display: flex;
 }
 
+
+/* END:  BOB-SHOOTING SCREEN--- BOB-SHOOTING SCREEN---- END  BOB-SHOOTING SCREEN */
+
+
+/*  ----------------- RESPONSIVE MENU -------------- */
 .burger {
     display: none;
 }
@@ -49,7 +49,6 @@
 }
 
 
-
 .hideNav {
     display: none;
     position: absolute;
@@ -57,86 +56,31 @@
     justify-content: start;
     align-content: center;
     background-color: white;
+
     min-width: 50vh;
     height: 100%;
     z-index: 500;
-    margin-top: 36.5rem;
+    margin-top: 36.4rem;
     min-height: 100vh;
     left: 0;
 }
 
-
-
-
-
-/* *******************************************************************    SMALLER SCREENS  */
-
-@media screen and (max-width: 768px) {
-
-    /*  ----------------- RESPONSIVE MENU -------------- */
-    .active {
-        transform: translate(0%);
-
-    }
-
-
-
-
-
-    .burger {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: transparent;
-        height: 40px;
-        cursor: pointer;
-        border: none;
-        margin-top: -10px;
-    }
-
-
-    .burger.active .burger-lines:first-child {
-        position: absolute;
-        transform: translateX(-555px);
-        top: -25px;
-        height: 110vh;
-        width: 70vw;
-        background-color: rgba(0, 0, 0, 0.827);
-    }
-
-
-    .burger.active .burger-lines:nth-child(2) {
-        display: none;
-
-    }
-
-    .burger.active .burger-lines:nth-child(3) {
-        display: none;
-
-    }
-
-    .burger-icon {
-        display: flex;
-        width: 100%;
-        position: absolute;
-        top: 0.2rem;
-        left: 18.7rem;
-        font-size: 20px;
-        color: red;
-    }
-
-
-
-
-
-    /*  ----------------- DROP-DOWN MENU -------------- */
-    .show {
-        display: flex;
-
-    }
-
-
-
+/* BACKGROUND  */
+.hideBackground {
+    display: none;
+    background-color: #010001a9;
+    position: absolute;
+    z-index: 5;
+    max-width: 72rem;
+    min-width: 100vw;
+    height: 100vh;
+    min-height: 80rem;
 
 }
+
+
+/* END RESPONSIVE MENU ----------------END RESPONSIVE MENU --------------END RESPONSIVE MENU */
+
+/*  ----------------- DROP-DOWN  -------------- */
+
+/* END DROP-DOWN  ----------------END DROP-DOWN  --------------END DROP-DOWN  */

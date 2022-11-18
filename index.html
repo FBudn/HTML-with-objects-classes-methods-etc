@@ -10,6 +10,7 @@
     <!-- Tailwind and Styles-->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="mobile.css" />
 
     <!-- FONTS -->
 
@@ -21,6 +22,9 @@
 </head>
 
 
+
+
+
 <!-- ---------------------------------------------------     BODY -->
 
 <body class="flex bg-slate-900 justify-center w-full ">
@@ -30,6 +34,9 @@
         <div id="TRR"></div>
         <div id="HIT" class="mt-16 text-center"> BOOOM, YOU'RE HIT </div>
     </div>
+
+
+
 
 
     <!---------------------------------------------------------------------------------- HEADER TOP BAR-->
@@ -50,39 +57,39 @@
             <!-- end for burger div -->
         </div>
 
-        <!-- --------------------------------------------- DROP-DOWN MENU-->
 
+
+
+        <!-- --------------------------------------------- RESPONSIVE MENU-->
+
+        <!-- LIST START -->
         <ul id="header-ul" class="hideNav">
+            <!-- CLOSING MENU ICON -->
             <i class="far fa-times-circle burger-icon"></i>
 
-            <li id="pages" class="flex flex-col bg-red-100">
-                <a class=" flex-col bg-red-100" href="#">Pages </a>
-                <div class="flex flex-col bg-red-100">
-                    <div class="flex flex-col bg-red-100">
+            <!-- LIST POINT #1 -->
+            <li id="pages" class="flex flex-col ">
+                <a class="flex w-full bg-black text-white h-16" href="#">Pages </a>
 
-                        <div class="flex flex-col bg-red-100">
-                            <h6>Service</h5>
-                                <a href="#">Service 01 </a>
-                                <a href="#">Service 02 </a>
-                                <a href="#">Service 03 </a>
-                                <a href="#">Service 04 </a>
-                        </div>
+                <div class="flex flex-col ">
 
-                        <div class="flex flex-col bg-red-100">
-                            <h6>Team</h5>
-                                <a href="#">Team 01 </a>
-                                <a href="#">Team 02 </a>
+                    <h6>Service</h5>
+                        <a href="#">Service 01 </a>
+                        <a href="#">Service 02 </a>
+                        <a href="#">Service 03 </a>
+                        <a href="#">Service 04 </a>
 
-                                <div class="flex flex-col bg-red-100">
-                                    <h6>Others</h5>
-                                        <a href="#">FAQ</a>
-                                        <a href="#">404 </a>
-                                </div>
-                        </div>
-                    </div>
+                        <h6>Team</h5>
+                            <a href="#">Team 01 </a>
+                            <a href="#">Team 02 </a>
+
+                            <h6>Others</h5>
+                                <a href="#">FAQ</a>
+                                <a href="#">404 </a>
                 </div>
             </li>
         </ul>
+        <!-- END OF RESPONSIVE --------------------------------------------- END OF RESPONSIVE MENU-->
 
 
 
@@ -99,11 +106,20 @@
             <!-- end for-logo div  -->
         </div>
 
-
+        <!--END HEADER TOP BAR---------------------END HEADER TOP BAR-------------------------------------------END HEADER TOP BAR-->
     </header>
+
+    <!-- ------------- BACKGROUND FOR RESPONSIVE MENU MAX WIDTH DIV -->
+    <div id="responsive-menu-background" class="hideBackground"> </div>
+
 
     <!-- ---------------------------------------------------     MAX WIDTH DIV -->
     <div class="flex flex-col w-full justify-center align-center 2xl:max-w-6xl">
+
+
+
+
+
 
         <!-- ---------------------------------------------------     MAIN -->
         <main class="flex justify-center flex-col w-full ">
@@ -124,7 +140,8 @@
 
 
                 <!-- ROW2-->
-                <div class="flex justify-center col-span-3 text-white text-bold p-2">Tu są obiekty stworzone bez użycia
+                <div class="flex justify-center col-span-3 text-white text-bold p-2">Tu są obiekty stworzone bez
+                    użycia
                     klas:
                     <!-- END: ROW2-->
                 </div>
@@ -138,7 +155,7 @@
 
                         <!-- OBJECT PICTURE-->
                         <img class="max-h-72"
-                            src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/314348455_634692961636608_1714637339064900824_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=3puDbv31N-QAX_TjRU7&tn=DdqEiGkvDo-WROD9&_nc_ht=scontent-waw1-1.xx&oh=00_AfAHRKN4yMi6tm_rUdq8-cHD6LuGzpCDcdp8gU3ecrYmYg&oe=6369E4FB"
+                            src="https://static.vecteezy.com/system/resources/previews/000/659/638/non_2x/vector-funny-monster-comic-character-avatar.jpg"
                             alt="menu_picture">
                         <div
                             class="flex p-2 content-center -mt-10 bg-gradient-to-r from-black to-transparent text-white">
@@ -162,7 +179,7 @@
 
                         <!-- OBJECT PICTURE-->
                         <img class="max-h-72"
-                            src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/314348455_634692961636608_1714637339064900824_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=3puDbv31N-QAX_TjRU7&tn=DdqEiGkvDo-WROD9&_nc_ht=scontent-waw1-1.xx&oh=00_AfAHRKN4yMi6tm_rUdq8-cHD6LuGzpCDcdp8gU3ecrYmYg&oe=6369E4FB"
+                            src="https://static.vecteezy.com/system/resources/previews/000/659/638/non_2x/vector-funny-monster-comic-character-avatar.jpg"
                             alt="menu_picture">
                         <div
                             class="flex p-2 content-center -mt-10 bg-gradient-to-r from-black to-transparent text-white">
@@ -189,7 +206,7 @@
 
                         <!-- OBJECT PICTURE-->
                         <img class="max-h-72"
-                            src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/314348455_634692961636608_1714637339064900824_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=3puDbv31N-QAX_TjRU7&tn=DdqEiGkvDo-WROD9&_nc_ht=scontent-waw1-1.xx&oh=00_AfAHRKN4yMi6tm_rUdq8-cHD6LuGzpCDcdp8gU3ecrYmYg&oe=6369E4FB"
+                            src="https://static.vecteezy.com/system/resources/previews/000/659/638/non_2x/vector-funny-monster-comic-character-avatar.jpg"
                             alt="menu_picture">
                         <div
                             class="flex p-2 content-center -mt-10 bg-gradient-to-r from-black to-transparent text-white">
@@ -211,7 +228,8 @@
 
 
                 <!-- ROW4-->
-                <div class="flex justify-center col-span-3 text-white text-bold p-2">Tu są obiekty stworzone z użyciem
+                <div class="flex justify-center col-span-3 text-white text-bold p-2">Tu są obiekty stworzone z
+                    użyciem
                     klas:
                     <!-- END: ROW4-->
                 </div>
@@ -225,7 +243,7 @@
 
                         <!-- OBJECT PICTURE-->
                         <img class="max-h-72"
-                            src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/314348455_634692961636608_1714637339064900824_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=3puDbv31N-QAX_TjRU7&tn=DdqEiGkvDo-WROD9&_nc_ht=scontent-waw1-1.xx&oh=00_AfAHRKN4yMi6tm_rUdq8-cHD6LuGzpCDcdp8gU3ecrYmYg&oe=6369E4FB"
+                            src="https://static.vecteezy.com/system/resources/previews/000/659/638/non_2x/vector-funny-monster-comic-character-avatar.jpg"
                             alt="menu_picture">
                         <div
                             class="flex p-2 content-center -mt-10 bg-gradient-to-r from-black to-transparent text-white">
@@ -249,7 +267,7 @@
 
                         <!-- OBJECT PICTURE-->
                         <img class="max-h-72"
-                            src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/314348455_634692961636608_1714637339064900824_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=3puDbv31N-QAX_TjRU7&tn=DdqEiGkvDo-WROD9&_nc_ht=scontent-waw1-1.xx&oh=00_AfAHRKN4yMi6tm_rUdq8-cHD6LuGzpCDcdp8gU3ecrYmYg&oe=6369E4FB"
+                            src="https://static.vecteezy.com/system/resources/previews/000/659/638/non_2x/vector-funny-monster-comic-character-avatar.jpg"
                             alt="menu_picture">
                         <div
                             class="flex p-2 content-center -mt-10 bg-gradient-to-r from-black to-transparent text-white">
@@ -272,7 +290,7 @@
 
                         <!-- OBJECT PICTURE-->
                         <img class="max-h-72"
-                            src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/314348455_634692961636608_1714637339064900824_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=3puDbv31N-QAX_TjRU7&tn=DdqEiGkvDo-WROD9&_nc_ht=scontent-waw1-1.xx&oh=00_AfAHRKN4yMi6tm_rUdq8-cHD6LuGzpCDcdp8gU3ecrYmYg&oe=6369E4FB"
+                            src="https://static.vecteezy.com/system/resources/previews/000/659/638/non_2x/vector-funny-monster-comic-character-avatar.jpg"
                             alt="menu_picture">
                         <div
                             class="flex p-2 content-center -mt-10 bg-gradient-to-r from-black to-transparent text-white">
@@ -322,6 +340,8 @@
             <!-------------  END: FOOTER -->
         </footer>
 
+
+
         <!-- END: MAX WIDTH DIV  -->
     </div>
 
@@ -331,3 +351,23 @@
 </body>
 
 </html>
+
+
+<!-- 
+    Plan:
+Landing page: 
+top bar with drop-down menu for all screens
+section 1 fancy styled info about/what for
+section 2 examples of objects with doing som math and stuff on click buttons
+section 3 some animations 
+section 4 maybe very easy game
+section 5 actual time in some places with difrent showing options on click
+all stylized at the end 
+
+
+ad. drop-down menu with other htmls/examples
+#1 - page with math from exercises - all consol-logging what they are doing
+#2 - langing page all consol-logging/showing how its made 
+Rozkład na czynniki pierwsze /\
+
+-->
