@@ -39,8 +39,20 @@
 
     <!-- ----------------------------------------------------- Janhoots div-->
     <div id="JanShootWindow" class="hide">
-        <button id="loading" class=""></button>
-        <div id="JanInfo" class="mt-16 text-center">Surprise! Still in progress... </div>
+        <button type="button"
+            class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed"
+            disabled="">
+            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                </circle>
+                <path class="opacity-75" fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                </path>
+            </svg>
+            Processing...
+        </button>
+        <div id="JanInfo" class="mt-16 text-center animate-pulse">BOOM! BOOM! </div>
     </div>
     <!-- END  Buttons screens area ---------------------------------------------------   END  Buttons screens area -->
 
@@ -263,10 +275,11 @@
                             OBJECT #4</div>
                         <!-- END: OBJECT PICTURE-->
 
-                        <div class="bg-red-500" id="forObject4">
+                        <div class="bg-red-500" id="forObject4"></div>
+
+                        <button id="JanShoot" class="m-4 rounded bg-black text-white font-bold">Strzał</button>
 
 
-                        </div>
                         <!-- END: COL4-->
                     </div>
 
@@ -290,6 +303,7 @@
                         <div class="bg-red-500" id="forObject5">
 
 
+
                         </div>
                         <!-- END: COL5-->
                     </div>
@@ -310,11 +324,7 @@
                             OBJECT #6</div>
                         <!-- END: OBJECT PICTURE-->
 
-                        <div class="bg-red-500" id="forObject6">
-
-
-                        </div>
-
+                        <div class="bg-red-500" id="forObject6"> </div>
 
                         <button id="BobShoot" class="m-4 rounded bg-black text-white font-bold">Strzał</button>
 
@@ -333,19 +343,7 @@
             <!-------SECTION 2 ANIMATIONS MAYBE?-->
 
             <div class="flex">
-                <button type="button"
-                    class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed"
-                    disabled="">
-                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 24 24">
-                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
-                        </circle>
-                        <path class="opacity-75" fill="currentColor"
-                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
-                        </path>
-                    </svg>
-                    Processing...
-                </button>
+                HERE
             </div>
 
 

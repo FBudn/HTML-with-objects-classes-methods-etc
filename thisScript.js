@@ -112,9 +112,7 @@ object4Place.innerHTML +=
   "<br>" +
   solgierJan.country +
   "<br>" +
-  solgierJan.weapon +
-  "<br>" +
-  solgierJan.shootPL();
+  solgierJan.weapon;
 
 //Object 5
 
@@ -160,11 +158,13 @@ let bobShootsPlace = document.getElementById("TRR");
 
 bobShootsPlace.innerHTML += solgierBob.shootTRRR;
 
+// --------------------                 ------------------   SHOOTING SCREENS
+
 //CLOSING screen BobShoot
 let bobWindowClose = document.getElementById("BobShootWindow");
 
 bobWindowClose.addEventListener("click", function () {
-  bobWindowClose.classList.toggle("show");
+  bobWindowClose.classList.toggle("show1");
 });
 
 //OPENING screen Bobshoot
@@ -172,7 +172,23 @@ let bobShoots = document.getElementById("BobShoot");
 let bobWindow = document.getElementById("BobShootWindow");
 
 bobShoots.addEventListener("click", function () {
-  bobWindow.classList.toggle("show");
+  bobWindow.classList.toggle("show1");
+  //scrollFunction();
+});
+
+//ClOSING screen Janshoot
+let janWindowClose = document.getElementById("JanShootWindow");
+
+janWindowClose.addEventListener("click", function () {
+  janWindowClose.classList.toggle("show");
+});
+
+//OPENING screen janshoot
+let janShoots = document.getElementById("JanShoot");
+let janWindow = document.getElementById("JanShootWindow");
+
+janShoots.addEventListener("click", function () {
+  janWindow.classList.toggle("show");
 });
 
 // --------------------                         RESPONSIVE MENU ACTIONS
@@ -189,7 +205,7 @@ burgerIcon.addEventListener("click", function () {
 //CLOSING MENU
 let mobileNavClose = document.getElementById("header-ul");
 
-bobWindowClose.addEventListener("click", function () {
+mobileNavClose.addEventListener("click", function () {
   mobileNavClose.classList.toggle("show");
 });
 
