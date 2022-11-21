@@ -130,9 +130,7 @@ object5Place.innerHTML +=
   "<br>" +
   solgierAhmed.country +
   "<br>" +
-  solgierAhmed.weapon +
-  "<br>" +
-  solgierAhmed.shootTer();
+  solgierAhmed.weapon;
 
 //Object 6
 
@@ -177,8 +175,8 @@ bobShoots.addEventListener("click", function () {
 });
 
 function topFunctionButtonScreens() {
-  document.body.scrollTop = 350; // For Safari
-  document.documentElement.scrollTop = 350; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 400; // For Safari
+  document.documentElement.scrollTop = 400; // For Chrome, Firefox, IE and Opera
 }
 
 //ClOSING screen Janshoot
@@ -194,6 +192,21 @@ let janWindow = document.getElementById("JanShootWindow");
 
 janShoots.addEventListener("click", function () {
   janWindow.classList.toggle("show");
+});
+
+//ClOSING screen Ahmedshoot
+let AhmedWindowClose = document.getElementById("AhmedShootWindow");
+
+AhmedWindowClose.addEventListener("click", function () {
+  AhmedWindowClose.classList.toggle("show");
+});
+
+//OPENING screen Ahmedshoot
+let AhmedShoots = document.getElementById("AhmedShoot");
+let AhmedWindow = document.getElementById("AhmedShootWindow");
+
+AhmedShoots.addEventListener("click", function () {
+  AhmedWindow.classList.toggle("show");
 });
 
 // --------------------                         RESPONSIVE MENU ACTIONS

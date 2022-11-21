@@ -33,26 +33,20 @@
 
     <!-- ----------------------------------------------------- BobShoots div-->
     <div id="BobShootWindow" class="hide">
-        <div id="TRR"></div>
-        <div id="HIT" class="text-center"> BOOOM, YOU'RE HIT </div>
+        <div class="animate-pulse" id="TRR"></div>
+        <div id="HIT" class="text-center animate-pulse "> BOOOM, YOU'RE HIT </div>
     </div>
 
     <!-- ----------------------------------------------------- Janhoots div-->
     <div id="JanShootWindow" class="hide">
-        <button type="button"
-            class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed"
-            disabled="">
-            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
-                </circle>
-                <path class="opacity-75" fill="currentColor"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
-                </path>
-            </svg>
-            Processing...
-        </button>
+
         <div id="JanInfo" class=" text-center animate-pulse">BOOM! BOOM! </div>
+    </div>
+
+    <!-- ----------------------------------------------------- Janhoots div-->
+    <div id="AhmedShootWindow" class="hide">
+
+        <div id="AhmedInfo" class=" text-center animate-pulse">RA-TA-TA-TA </div>
     </div>
     <!-- END  Buttons screens area ---------------------------------------------------   END  Buttons screens area -->
 
@@ -301,11 +295,11 @@
                             OBJECT #5</div>
                         <!-- END: OBJECT PICTURE-->
 
-                        <div class="bg-red-500" id="forObject5">
+                        <div class="bg-red-500" id="forObject5"> </div>
 
 
-
-                        </div>
+                        <button onclick="topFunctionButtonScreens()" id="AhmedShoot"
+                            class="m-4 rounded bg-black text-white font-bold">Strzał</button>
                         <!-- END: COL5-->
                     </div>
                     <!--END: COL6 -->
@@ -345,7 +339,23 @@
             <!-------SECTION 2 ANIMATIONS MAYBE?-->
 
             <div class="flex">
-                HERE
+                IN PROGRESS...
+            </div>
+
+            <div>
+                <button type="button"
+                    class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed"
+                    disabled="">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                        </circle>
+                        <path class="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                        </path>
+                    </svg>
+                    Processing...
+                </button>
             </div>
 
 
@@ -417,7 +427,7 @@ section 2 examples of objects with doing som math and stuff on click buttons
 section 3 some animations 
 section 4 maybe very easy game
 section 5 actual time in some places with difrent showing options on click
-all stylized at the end 
+all stylized at the end including shooting screens
 
 
 ad. drop-down menu with other htmls/examples
@@ -427,7 +437,7 @@ Rozkład na czynniki pierwsze /\
 
 
 Next steps: 
-- all working buttons screens - z ustawieniem wysokości wyświetlania
+- all working buttons screens - z ustawieniem wysokości wyświetlania DONE
 - inputs to objects functions
 
 -->
