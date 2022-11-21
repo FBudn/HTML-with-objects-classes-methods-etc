@@ -7,7 +7,7 @@
 /* ----------------------------------- BOB-SHOOTING SCREEN */
 .hide {
     display: none;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     align-items: center;
     position: absolute;

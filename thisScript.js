@@ -176,6 +176,11 @@ bobShoots.addEventListener("click", function () {
   //scrollFunction();
 });
 
+function topFunctionButtonScreens() {
+  document.body.scrollTop = 350; // For Safari
+  document.documentElement.scrollTop = 350; // For Chrome, Firefox, IE and Opera
+}
+
 //ClOSING screen Janshoot
 let janWindowClose = document.getElementById("JanShootWindow");
 
