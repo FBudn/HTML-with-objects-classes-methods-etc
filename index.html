@@ -352,40 +352,78 @@
                     </div>
                     <div
                         class="grid grid grid-cols-5 auto-rows-auto m-4 border-2 border-emerald-500 rounded p-2 gap-1 bg-slate-300">
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                        <div id="calc1"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
                             1</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                        <div id="calc2"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
                             2</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">3</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded text-xs">Modulo
+                        <div id="calc3"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
+                            3</div>
+                        <div id="calcModulo"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-xs font-bold text-emerald-500">
+                            Modulo
                         </div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">%</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">4</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">5</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">6</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
-                            <i class="fa-solid fa-xmark text-emerald-500 text-xl"></i> <!-- text-emerald-500 text-xl -->
+                        <div id="calcPercent"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-percent  text-emerald-500 text-xl"></i>
                         </div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
-                            <i class="fa-solid fa-divide text-emerald-500 text-xl"></i>
+                        <div id="calc4"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
+                            4</div>
+                        <div id="calc5"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
+                            5</div>
+                        <div id="calc6"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
+                            6</div>
+                        <div id="calcMultiplication"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-xmark text-emerald-500 text-2xl"></i>
+                            <!-- text-emerald-500 text-2xl -->
                         </div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">7</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">8</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">9</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">+</div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">-</div>
-                        <div class="col-span-2 flex justify-center items-center border-2 border-emerald-500 rounded">0
+                        <div id="calcDivide"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-divide text-emerald-500 text-2xl"></i>
+                        </div>
+                        <div id="calc7"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
+                            7</div>
+                        <div id="calc8"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
+                            8</div>
+                        <div id="calc9"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
+                            9</div>
+                        <div id="calcPlus" class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-plus text-emerald-500 text-2xl "></i>
+                        </div>
+                        <div id="calcMinus"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-minus text-emerald-500 text-2xl "></i>
+                        </div>
+                        <div id="calc0"
+                            class="col-span-2 flex justify-center items-center border-2 border-emerald-500 rounded text-emerald-500 font-bold">
+                            0
                         </div>
 
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">,</div>
-                        <div class="col-span-2 flex justify-center items-center border-2 border-emerald-500 rounded">=
+                        <div id="calcComma"
+                            class="border-2 border-emerald-500 rounded text-center  text-2xl text-emerald-500 font-bold">
+                            ,</div>
+                        <div id="calcEqual"
+                            class="col-span-2 flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-equals text-emerald-500 text-2xl"></i>
                         </div>
-                        <div class="col-span-3 flex justify-center items-center border-2 border-emerald-500 rounded">
-                            <input type="text" placeholder="inputek">
+                        <div id="calcInputDiv"
+                            class="col-span-3 flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <input id="calcInput" type="text" placeholder="inputek">
                         </div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded"><i
+                        <div id="calcDeleteLeft"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded"><i
                                 class="fa-solid fa-delete-left text-emerald-500 text-xl"></i></div>
-                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                        <div id="calcDeleteAll"
+                            class="flex justify-center items-center border-2 border-emerald-500 rounded">
                             <i class="fa-solid fa-c text-emerald-500"></i>
                         </div>
 
