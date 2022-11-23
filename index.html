@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="mobile.css" />
 
+
     <!-- FONTS -->
 
     <link rel="stylesheet" id="appilo-fontawesome-5-2-css"
         href="https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/css/plugins/fontawesome-5/css/fontawesome-pro-v5.css?ver=6.1.7"
         type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/c76a95df26.js" crossorigin="anonymous"></script>
+
 
 
 </head>
@@ -343,30 +346,48 @@
             <div class="flex justify-center align-center items-center w-full my-6">
 
 
-                <div class="flex flex-col bg-white test-black">
-                    <div class="grid grid grid-cols-5 gap-1 auto-rows-auto">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>modulo</div>
-                        <div>%</div>
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>
-                        <div>x</div>
-                        <div>/</div>
-                        <div>7</div>
-                        <div>8</div>
-                        <div>9</div>
-                        <div>+</div>
-                        <div>-</div>
-                        <div class="col-span-2">0</div>
+                <div class="flex flex-col bg-white test-black rounded">
+                    <div class="flex absolute text-2xl text-emerald-500 left-3 "><i
+                            class="absolute flex fa-solid fa-calculator h-32 "></i>
+                    </div>
+                    <div
+                        class="grid grid grid-cols-5 auto-rows-auto m-4 border-2 border-emerald-500 rounded p-2 gap-1 bg-slate-300">
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            1</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            2</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">3</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded text-xs">Modulo
+                        </div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">%</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">4</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">5</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">6</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-xmark text-emerald-500 text-xl"></i> <!-- text-emerald-500 text-xl -->
+                        </div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-divide text-emerald-500 text-xl"></i>
+                        </div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">7</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">8</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">9</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">+</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">-</div>
+                        <div class="col-span-2 flex justify-center items-center border-2 border-emerald-500 rounded">0
+                        </div>
 
-                        <div>,</div>
-                        <div class="col-span-2">=</div>
-                        <div class="col-span-3"><input type="text" placeholder="inputek"></div>
-                        <div>cof.1</div>
-                        <div>C</div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">,</div>
+                        <div class="col-span-2 flex justify-center items-center border-2 border-emerald-500 rounded">=
+                        </div>
+                        <div class="col-span-3 flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <input type="text" placeholder="inputek">
+                        </div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded"><i
+                                class="fa-solid fa-delete-left text-emerald-500 text-xl"></i></div>
+                        <div class="flex justify-center items-center border-2 border-emerald-500 rounded">
+                            <i class="fa-solid fa-c text-emerald-500"></i>
+                        </div>
 
                     </div>
 
