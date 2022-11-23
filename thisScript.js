@@ -220,14 +220,14 @@ burgerIcon.addEventListener("click", function () {
   mobileNav.classList.toggle("show");
 });
 
-//CLOSING MENU
+/*//CLOSING MENU
 let mobileNavClose = document.getElementById("header-ul");
 
 mobileNavClose.addEventListener("click", function () {
   mobileNavClose.classList.toggle("show");
-});
+});*/
 
-/* BURGER X ICON */
+/* BURGER X ICON -> CLOSING MENU*/
 
 const dropBurger = document.querySelector(".burger-icon");
 const droP = document.getElementById("header-ul");
