@@ -345,11 +345,17 @@
             <!-----------------------------------------------------------------    SECTION 2 CALCULATOR -->
             <div class="flex justify-center align-center items-center w-full my-6">
 
-
-                <div class="flex flex-col bg-white test-black rounded">
-                    <div class="flex absolute text-2xl text-emerald-500 left-3 "><i
-                            class="absolute flex fa-solid fa-calculator h-32 "></i>
+                <!-- Background div-->
+                <div class="flex flex-col bg-white rounded bg-cover p-5"
+                    style="background-image: url(https://img.freepik.com/darmowe-wektory/tablica-z-elementami-matematyki_1411-88.jpg?w=996&t=st=1669308460~exp=1669309060~hmac=d6dcbf5f6c908d798c552230885bd250d3bc7d58e00ce2f4cbf032cf1c3916df)">
+                    <!-- CALC ICON-->
+                    <div class="flex absolute text-2xl text-emerald-500 bg-slate-300 rounded text-center justify-center pt-0.5 w-8 h-8 
+                        border-2 border-emerald-500 left-4">
+                        <i class="absolute flex fa-solid fa-calculator h-32 "></i>
                     </div>
+
+
+                    <!-- Calc-"MEAT" grid div-->
                     <div
                         class="grid grid grid-cols-5 auto-rows-auto m-4 border-2 border-emerald-500 rounded p-2 gap-1 bg-slate-300">
                         <div id="calc1"
@@ -427,9 +433,9 @@
                             <i class="fa-solid fa-c text-emerald-500"></i>
                         </div>
 
+                        <!-- end: calc-"meat"-grid-->
                     </div>
-
-
+                    <!-- end: background div-->
                 </div>
 
 
@@ -510,7 +516,7 @@
         </footer>
         <!-- -----------------------------     go-to-top button div  -->
         <button onclick="topFunction()" id="myBtn"
-            class="  fixed text-center right-2 rounded-full h-8 w-8 bg-slate-700 text-white cursor-pointer border-2"
+            class="  fixed text-center right-2 bottom-2 rounded-full h-8 w-8 bg-slate-700 text-white cursor-pointer border-2"
             title="Go to top"><i aria-hidden="true" class="fas fa-arrow-up"></i></button>
 
 
@@ -547,5 +553,10 @@ Rozkład na czynniki pierwsze /\
 Next steps: 
 - all working buttons screens - z ustawieniem wysokości wyświetlania DONE
 - inputs to objects functions
+
+
+ERRORS: 
+- background screen while view is scrolled down - while opening burger its too short 
+
 
 -->
