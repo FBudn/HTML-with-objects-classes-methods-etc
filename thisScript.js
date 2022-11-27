@@ -276,3 +276,44 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+/* CALCULATOR */
+function calculatorInput() {
+  /* finds out whether the browser uses textContent (Webkit, Opera, Mozilla...)
+     or innerText (Microsoft) to set the text of an element/node */
+  let textType = Node.textContent ? "textContent" : "innerText",
+    /* uses parseFloat to create numbers (where possible) from the entered value
+     if parseFloat fails to find a number (it's empty or nonsensical)
+     then a 0 is used instead (to prevent NaN being the output). */
+    num1 = parseFloat(document.getElementById("num1").value) || 0,
+    num2 = parseFloat(document.getElementById("num2").value) || 0,
+    // retrieves the result element
+    result = document.getElementById("result");
+
+  // switch is used to avoid lots of 'if'/'else if' statements,
+  // .replace() is used to remove leading, and trailing, whitespace
+  // could use .trim() instead, but that'd need a shim for (older?) IE
+  switch (document.getElementById("op").value.replace(/\s/g, "")) {
+    // if the entered value is:
+    // a '+' then we set the result element's text to the sum
+    case "+":
+      result[textType] = num1 + num2;
+      break;
+    // and so on...
+    case "-":
+      result[textType] = num1 - num2;
+      break;
+    case "*":
+      result[textType] = num1 * num2;
+      break;
+    case "/":
+      result[textType] = num1 / num2;
+      break;
+    // because people are going to try, give a default message if a non-math
+    // operand is used
+    default:
+      result[textType] =
+        "Seriously? You wanted to try math with that operand? Now stop being silly.";
+      break;
+  }
+}
