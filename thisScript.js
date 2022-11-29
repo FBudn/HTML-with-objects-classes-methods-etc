@@ -279,6 +279,12 @@ function topFunction() {
 
 /* CALCULATOR  - mogę funkcję od razu w inputa dać*/
 
+// pattern inputa /^[0-9]{1,}[.]{0,1}[0-9]{0,2}[ ]{0,1}[+*%^-]{1}[ ]{0,1}[0-9]{1,}[.]{0,1}[0-9]{0,2}/gm
+
+//testuje czy input zgadza się z powyższym jak tak to
+
+//splituje na lewą znak specjalny i prawą do zmiennych i wtedy leci dalej
+
 function calculatorInput() {
   /* finds out whether the browser uses textContent (Webkit, Opera, Mozilla...)
      or innerText (Microsoft) to set the text of an element/node */
