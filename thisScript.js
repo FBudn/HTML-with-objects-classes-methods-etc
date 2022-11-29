@@ -277,7 +277,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-/* CALCULATOR */
+/* CALCULATOR  - mogę funkcję od razu w inputa dać*/
+
 function calculatorInput() {
   /* finds out whether the browser uses textContent (Webkit, Opera, Mozilla...)
      or innerText (Microsoft) to set the text of an element/node */
@@ -285,6 +286,13 @@ function calculatorInput() {
     /* uses parseFloat to create numbers (where possible) from the entered value
      if parseFloat fails to find a number (it's empty or nonsensical)
      then a 0 is used instead (to prevent NaN being the output). */
+
+    /* GETS TEXT FROM INPUT
+
+    if (Node.textCo)
+     let nums = parseFloat(document.getElementById("calcInput").value) || 0, 
+
+     */
     num1 = parseFloat(document.getElementById("num1").value) || 0,
     num2 = parseFloat(document.getElementById("num2").value) || 0,
     // retrieves the result element
