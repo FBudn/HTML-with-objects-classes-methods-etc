@@ -331,3 +331,22 @@ function calculatorInput() {
       break;
   }
 }
+
+//CLOCKS
+
+//PL
+function plTime() {
+  const moment = require("moment");
+  return moment().locale("pl").format("DD-MMMM-YYYY").toString();
+}
+
+//const plClockPlace = document.getElementById("plTime");
+//let nach = "1234";
+
+//plClockPlace.innerHTML += nach;
+
+let plClockTime = document.getElementById("plTime");
+
+let test = "chuh";
+
+plClockTime.innerHTML += test;

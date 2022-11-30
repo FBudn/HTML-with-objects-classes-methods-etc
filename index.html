@@ -11,6 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="mobile.css" />
+    <script src="./thisScript.js" defer="defer"></script>
 
 
     <!-- FONTS -->
@@ -498,7 +499,9 @@
                     <div class="flex justify-center items-center text-center">miejsce</div>
                     <div class="flex justify-center items-center text-center">miejsce</div>
                     <!-- time 1-->
-                    <div class="flex rounded-full justify-cetner items-center bg-green-500">1</div>
+                    <div class="flex rounded-full justify-cetner items-center bg-green-500 text-black font-bold">
+                        <div class="flex w-full h-full justify-center" id="plTime"></div>
+                    </div>
                     <!-- time 2-->
                     <div class="flex rounded-full justify-cetner items-center bg-green-500">2</div>
                     <!-- time 3-->
@@ -519,8 +522,9 @@
 
                 <!-- What day was your birthday? -->
 
-                <div class="flex w-full ">
-                    your birth day
+                <div class="flex w-full flex-col justify-center items-center ">
+                    <div>What day was: </div>
+                    <input class="pl-1" id="dateInput" type="text" placeholder="write a date">
 
                 </div>
 
@@ -566,8 +570,7 @@
         <!-- END: MAX WIDTH DIV  -->
     </div>
 
-    <!-- SCRIPT -->
-    <script src="./thisScript.js"></script>
+
     <!-------------  END: BODY -->
 </body>
 
