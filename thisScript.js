@@ -335,17 +335,12 @@ function calculatorInput() {
 //CLOCKS
 
 //PL
-function plTime() {
-  const moment = require("moment");
-  return moment().locale("pl").format("DD-MMMM-YYYY").toString();
-}
 
-//const plClockPlace = document.getElementById("plTime");
-//let nach = "1234";
-
-//plClockPlace.innerHTML += nach;
+//const moment = require("moment");
+//const plTime = moment().locale("pl").format("DD-MMMM-YYYY").toString();
 
 let plClockTime = document.getElementById("plTime");
+console.log(plClockTime);
 
 let test = "chuh";
 
