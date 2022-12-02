@@ -338,11 +338,14 @@ function calculatorInput() {
 
 const plTime = moment(); // bez tego zalogować .locale("pl").format("DD-MMMM-YYYY").toString();
 
-// pi
-
 let plClockTime = document.getElementById("plTime");
-console.log(plTime.format());
-
-let test = "chuh";
+//console.log(plTime.format());
 
 plClockTime.innerHTML += plTime.format("HH:mm:ss");
+
+//London
+
+let b = "moment-timezones"; //.tz("America/Toronto"); // "America/Toronto");
+let londonTime = document.getElementById("londonTime");
+
+londonTime.innerHTML += plTime.tz("America/Toronto").format("HH:mm:ss");
