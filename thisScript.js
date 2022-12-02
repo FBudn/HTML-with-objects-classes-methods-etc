@@ -336,12 +336,13 @@ function calculatorInput() {
 
 //PL
 
-//const moment = require("moment");
-//const plTime = moment().locale("pl").format("DD-MMMM-YYYY").toString();
+const plTime = moment(); // bez tego zalogować .locale("pl").format("DD-MMMM-YYYY").toString();
+
+// pi
 
 let plClockTime = document.getElementById("plTime");
-console.log(plClockTime);
+console.log(plTime.format());
 
 let test = "chuh";
 
-plClockTime.innerHTML += test;
+plClockTime.innerHTML += plTime.format("HH:mm:ss");
