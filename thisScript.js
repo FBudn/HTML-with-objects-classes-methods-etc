@@ -345,7 +345,7 @@ plClockTime.innerHTML += plTime.format("HH:mm:ss");
 
 //London
 
-let b = "moment-timezones"; //.tz("America/Toronto"); // "America/Toronto");
+let b = moment.tz("2020-01-01 11:20", "Asia/Singapore"); //.tz("America/Toronto"); // "America/Toronto");
 let londonTime = document.getElementById("londonTime");
 
-londonTime.innerHTML += plTime.tz("America/Toronto").format("HH:mm:ss");
+londonTime.innerHTML += b.tz("America/Toronto").format("HH:mm:ss");
